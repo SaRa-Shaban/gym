@@ -1,0 +1,44 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 10rem;
+    height: 3rem;
+}
+
+.HeaderMenu{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    color: white;
+}
+
+.HeaderMenu>li {
+    padding: 0;
+    cursor: pointer;
+}
+
+.HeaderMenu>li:hover {
+    color: var(--orange);
+    cursor: pointer;
+}
+
+/* media Query */
+
+@media screen and (max-width: 786px) {
+    .header>:nth-child(2){
+        position: fixed;
+        right: 2rem;
+        z-index: 99;
+    }
+
+    .HeaderMenu{
+        flex-direction: column;
+        background-color: var(--appColor);
+        padding: 2rem;
+        
+    }
+}
